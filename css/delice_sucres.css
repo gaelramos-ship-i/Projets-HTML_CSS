@@ -1,0 +1,351 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Général */
+* {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --max-width: 1440px;
+    --prata: "Prata", serif;
+    --roboto: "Roboto", sans-serif;
+    --background: #f7f7f7;
+    --background-tag: #f1f1f1;
+    --anthracite: #333;
+    --black: #000;
+    --transition: 0.3s ease-out;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: #e0b79e;
+    transition: var(--transition);
+}
+
+h2 {
+    font-family: var(--prata);
+    font-size: 52px;
+    font-weight: 400;
+}
+
+button {
+    background: var(--black);
+    color: var(--background);
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s ease-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-out;
+}
+
+/* Header */
+header {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 40px;
+}
+
+header a img {
+    width: 180px;
+}
+
+#burger {
+    display: none;
+}
+
+/* Section 1 */
+.section1 {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 10px;
+    padding-bottom: 100px;
+}
+
+.section1>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.section1>div h1 {
+    font-family: var(--prata);
+    font-size: 52px;
+    font-weight: 400;
+    width: 30%;
+}
+
+.section1>div p {
+    width: 46%;
+}
+
+.section1 img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.section1>div:nth-child(2) {
+    padding: 0 60px;
+}
+
+/* Section 2 */
+
+.section2 {
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.tag {
+    background: var(--background-tag);
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: var(--roboto);
+    margin-bottom: 20px;
+}
+
+.section2>div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: left;
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.section2 article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.section2 h2 {
+    margin-bottom: 40px;
+}
+
+.section2 h3 {
+    font-family: var(--prata);
+    font-weight: 400;
+    padding: 10px 0 6px;
+}
+
+.section2>div>p:nth-last-child(1) {
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.section2 article {
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.section2 article div {
+    margin: 0 10px;
+}
+
+.section2 article div p:nth-last-child(1) {
+    font-family: var(--prata);
+    padding: 16px 0px 10px;
+    font-size: 24px;
+}
+
+/* Section 3 */
+
+.section3 {
+    background: var(--background);
+}
+
+.section3>div {
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    padding: 100px 0;
+    align-items: center;
+}
+
+.section3>div>div {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.section3>div p {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.section3>div img {
+    width: 50%;
+    height: 380px;
+    border-radius: 20px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.section3 .tag {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.section3 div button {
+    padding: 10px 20px;
+}
+
+/* Section4 */
+.section4 {
+    max-width: 560px;
+    margin: auto;
+    text-align: left;
+    justify-content: center;
+    padding: 60px 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.section4 p {
+    padding: 20px 0 40px;
+}
+
+form input {
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+form textarea {
+    height: 100px;
+    padding: 8px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+/* Footer */
+footer {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+    .section2>div:nth-child(2) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section2 article:nth-last-child(1) {
+        grid-column: 1/3;
+    }
+
+    .section3>div {
+        display: block;
+    }
+
+    .section3>div>div {
+        width: 96%;
+    }
+
+    .section3>div img {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #burger {
+        display: block;
+    }
+
+    button:hover {
+        transform: scale(1.01);
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .section1>div:nth-child(1) {
+        display: block;
+    }
+
+    .section1>div h1,
+    .section1>div p {
+        width: 100%;
+    }
+
+    .section1 img {
+        height: auto;
+    }
+
+    .section1>div:nth-child(2) {
+        padding: 0;
+    }
+
+    .section2>div:nth-child(2) {
+        display: block;
+    }
+
+    .section2 article {
+        margin-top: 20px;
+    }
+
+    .section3>div img {
+        height: auto;
+        margin: 0 8px;
+        margin-top: 20px;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    footer a,
+    footer p {
+        font-size: 14px;
+    }
+}
