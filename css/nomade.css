@@ -1,0 +1,87 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Général */
+* {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --max-width: 1440px;
+    --prata: "Prata", serif;
+    --roboto: "Roboto", sans-serif;
+    --background: #fbebeb;
+    --gris: #7A7A7A;
+    --white: #f1f1f1;
+    --black: #000;
+    --transition: 0.3s ease-out;
+}
+
+a{
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover{
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+/* Header */
+
+header{
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav ul,
+header div ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 40px;
+}
+
+header div ul{
+    gap: 20px;
+}
+
+header a{
+    color: var(--gris);
+}
+
+header img{
+    width: 180px;
+}
+
+#burger{
+    display: none;
+}
+
+/* Footer */
+
+footer{
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+footer ul{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+}
+
+footer a{
+   color: var(--black);
+}
