@@ -42,6 +42,11 @@ ul{
     gap: 40px;
 }
 
+h1, h2, h3{
+    font-family: var(--prata);
+    font-weight: 400;
+}
+
 /* Header */
 
 header{
@@ -67,6 +72,89 @@ header nav a{
 
 #burger{
     display: none;
+}
+
+/* Section 1 */
+
+.section1{
+    background: var(--background);
+}
+
+.section1 > div{
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.section1 > div img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section1 > div img:nth-child(1){
+    margin-top: 10%;
+}
+
+.section1 > div div:nth-last-child(1){
+    display: flex;
+    gap: 20px;
+    width: auto;
+}
+
+.section1 > div div{
+    width: 44%;
+}
+
+.section1 > div div h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.section1 > div div a{
+    color: var(--black);
+    font-weight: 500;
+    display: inline-block;
+    margin: 40px 0;
+}
+
+/* Section 2 */
+
+.section2{
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: center;
+    padding: 0 10px 50px;
+}
+
+.section2 div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.section2 div i{
+    color: var(--icon);
+    font-size: 40px;
+}
+
+.section2 h2{
+    padding: 40px 0;
+    font-size: 35px;
+}
+
+.section2 h3{
+    padding: 14px 0;
+}
+
+.section2 p{
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 20px;
 }
 
 /* Footer */
