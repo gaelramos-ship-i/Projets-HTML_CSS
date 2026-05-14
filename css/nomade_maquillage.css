@@ -5,19 +5,20 @@
 
 * {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 :root {
     --max-width: 1440px;
-    --prata: "Prata", serif;
-    --roboto: "Roboto", sans-serif;
+    --arimo: "Arimo", sans-serif;
+    --open-sans: "Open Sans", sans-serif;
     --background: #fbebeb;
     --gris: #7A7A7A;
     --white: #f1f1f1;
     --black: #000;
-    --icon: #EC4899;
+    --pink: #EC4899;
     --red: #D41D35;
+    --overlay: #ffffff6e;
     --transition: 0.3s ease-out;
 }
 
@@ -40,6 +41,24 @@ ul{
     gap: 40px;
 }
 
+button{
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+
+h1{
+    font-family: var(--arimo);
+    font-size: 35px;
+}
+
 /* Header */
 
 header{
@@ -59,14 +78,134 @@ header div{
     gap: 10px;
     color: var(--white);
     align-items: center;
+    transition: var(--transition);
 }
 
 header div p{
     font-family: var(--roboto);
 }
 
+header div:hover{
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+
 header img{
     width: 180px;
+}
+
+/* Section 1 */
+
+.section1{
+    background-image: url("/img/nomade_maquillage/image-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section1 > div{
+    background: var(--overlay);
+}
+
+#container{
+    max-width: var(--max-width);
+    margin: auto;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container p{
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#container div{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+#container div button:nth-child(1){
+    background: var(--pink);
+    color: var(--white);
+}
+
+#container div button:nth-child(2){
+    color: var(--pink);
+}
+
+/* Section2 */
+.section2{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 80px 10px;
+    text-align: center;
+}
+
+.section2 h2{
+    font-size: 35px;
+    font-family: var(--arimo);
+    margin-bottom: 60px;
+}
+
+.section2 > div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.section2 > div img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.section2 > div article{
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.section2 > div article h3{
+    text-align: left;
+    margin: 24px 14px 0;
+}
+.section2 > div article p:nth-last-child(2){
+    text-align: left;
+    margin: 10px 14px;
+}
+
+.section2 > div article p:nth-last-child(1){
+    font-size: 20px;
+    font-family: var(--arimo);
+    font-weight: 700;
+    color: var(--pink);
+    padding: 10px;
+}
+
+/* Section3 */
+.section3{
+    background: var(--background);
+}
+
+.section3>div{
+    max-width: var(--background);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 100px 10px;
+}
+
+.section3>div img{
+    height: 460px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 /* Footer */
