@@ -204,6 +204,30 @@ header img {
     padding: 20px;
 }
 
+/* Section 4 */
+
+.section4{
+    background: var(--background);
+}
+
+.section4>div{
+    max-width: var(--max_width-2);
+    margin: auto;
+}
+
+.section4>div>div{
+    max-width: 860px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.section4 img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
 
 
 /* Footer */
